@@ -2,13 +2,14 @@ from Hotel import Hotel
 from Hospede import Hospede
 from Reserva import Reserva
 
-hotel = Hotel("Feras", "Centro Histórico", 30)
+hotel = Hotel("Feras", "Centro Histórico", 25)
 hospede = Hospede("Maria", "Feminino", 32)
 reserva = Reserva("25/12/2021", "05/01/2022", "600")
 
 # H O T E L 
 hotel.Abrir()
 hotel.Endereco()
+print(f"O Hotel {hotel.nomeHotel} possui {hotel.acomodacoes} acomodações.")
 
 # R E S E R V A
 reserva.ConfirmarReserva()
